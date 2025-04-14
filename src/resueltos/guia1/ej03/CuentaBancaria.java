@@ -39,7 +39,7 @@ public class CuentaBancaria {
                 System.out.println("Su saldo disponible no permite extraer ARS "+ monto);
             }
         } else{
-            System.out.println("El monto a depositar debe ser un real positivo");
+            System.out.println("El monto a extraer debe ser un real positivo");
         }
         
         
