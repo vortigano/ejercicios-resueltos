@@ -19,8 +19,8 @@ public class Password {
     /*▪ Password(String) {…}
     Crea un password cuyo valor viene dado por parámetro.*/
     public Password(String contrasenia) {
-        this();
-        nuevoValor(contrasenia);
+        this(); // Llamo al constructor sin parámetros para que cree un valor inicial aleatorio.
+        nuevoValor(contrasenia); // Luego intento poner la clave que vino 'de afuera'. Si no sirve, queda la aleatoria.
     }
 
     /*▪ boolean esFuerte() {…}
