@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>440</x><y>240</y><w>230</w><h>120</h></coordinates><panel_attributes>Garage
+-
+- codigo: String
+-
++ estacionar(String): EstadoVehiculo
++ esPersonaAutorizada(String): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>270</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- vehiculosRetirados</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>240</y><w>170</w><h>120</h></coordinates><panel_attributes>Vehiculo
+-
+- patente: String
+-
++ getMesesAdeudados(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>320</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- vehiculosEstacionados</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>440</y><w>180</w><h>110</h></coordinates><panel_attributes>Tablero
+-
+-
++devolverLlave(String): Llave</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>350</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tablero</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>440</y><w>160</w><h>120</h></coordinates><panel_attributes>Llave
+-
+- patente: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>490</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- llaves</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>100</y><w>160</w><h>70</h></coordinates><panel_attributes>Persona
+-
+- DNI: String
+- nombreCompleto: String
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>160</y><w>100</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- autorizadas</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>350</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- llave</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>100</y><w>190</w><h>100</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+EstadoVehiculo
+-
+_+ VEHICULO_NO_HABILITADO_
+_+ VEHICULO_YA_ESTACIONADO_
+_+ NO_ESTACIONA_ADEUDA_
+_+ INGRESO_OK_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>190</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>240</y><w>320</w><h>120</h></coordinates><panel_attributes>FooParking
+-
+-
++ obtenerInformeEstadoGarages(): ArrayList&lt;Informe&gt;
++ mostrarVehiculosSinLlave(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>280</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- garages</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>110</y><w>180</w><h>70</h></coordinates><panel_attributes>Informe
+-
+- codigoGarage: String
+- cantAutosEstacionados: int
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>170</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element></diagram>
