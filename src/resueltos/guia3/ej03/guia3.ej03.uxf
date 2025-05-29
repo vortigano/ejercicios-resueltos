@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>40</x><y>90</y><w>130</w><h>110</h></coordinates><panel_attributes>Mazo
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>90</y><w>140</w><h>110</h></coordinates><panel_attributes>/Carta/
+-
+-deFrente:boolean
+-
++Carta()
++darVuelta()
++mostrar()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>140</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-cartas
+m1=0..*
+</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>80</y><w>140</w><h>90</h></coordinates><panel_attributes>Joker
+-
+-enColor: boolean
+-
++Joker(boolean)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>280</y><w>140</w><h>90</h></coordinates><panel_attributes>/CartaConPalo/
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>400</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoDePalo
+-
+_+CORAZON(TipoDeColor.ROJO)_
+_+TREBOL(TipoDeColor.NEGRO)_
+_+PICA(TipoDeColor.NEGRO)_
+_+DIAMANTE(TipoDeColor.ROJO)_
+-
+-TipoDePalo(TipoDeColor)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>320</y><w>170</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+-palo
+m1=1
+</panel_attributes><additional_attributes>150;130;100;130;100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>110</y><w>150</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;50;60;50;60;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>190</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;100;60;10;60;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>430</y><w>210</w><h>90</h></coordinates><panel_attributes>CartaConNumero
+-
+-numero: int
+-
++CartaConNumero(int,TipoDePalo)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>570</y><w>210</w><h>120</h></coordinates><panel_attributes>CartaConLetra
+--
+-letra: char
+--
++CartaConLetra(char,TipoDePalo)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>320</y><w>140</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>360</y><w>90</w><h>300</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;70;280;10;280</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>220</y><w>140</w><h>80</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoDeColor
+--
+_+NEGRO_
+_+ROJO_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>290</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+- color
+m1=1
+</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element></diagram>
