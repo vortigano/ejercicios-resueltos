@@ -14,14 +14,28 @@ public class Mazo {
      * Debería autogenerar las 54 cartas de la baraja inglesa
      */
     public Mazo() {
-        
+        this.cartas = new ArrayList<>();
+        autoGenerarCartas();
+    }
+    
+    private void autoGenerarCartas() {
+        TipoDePalo[] palos = TipoDePalo.values();
+        for (int i = 0; i < palos.length; i++) {
+            cartas.add(new CartaConLetra('A', palos[i]));
+            generarCartasNumericas(palos[i]);
+            generarCartasConLetra(palos[i]);            
+        }
+        cartas.add(new Joker(false));
+        cartas.add(new Joker(true));
     }
     
     /**
      * Muestra las cartas en la consola (una por renglón)
      */
     public void mostrar() {
-        
+        for (Carta carta : cartas) {
+            carta.mostrar();
+        }
     }    
     
     /**
@@ -63,6 +77,19 @@ public class Mazo {
      */
     public void mostrarRepartidas(int nJugadores, int cartasXJugador) {
         
+    }
+
+    private void generarCartasNumericas(TipoDePalo palo) {
+        for (int i = 2; i <= 10; i++) {
+            cartas.add(new CartaConNumero(i, palo));
+        }
+    }
+
+    private void generarCartasConLetra(TipoDePalo palo) {
+        char[] letras = {'J', 'Q', 'K'};
+        for (int i = 0; i < letras.length; i++) {
+            cartas.add(new CartaConLetra(letras[i], palo));
+        }
     }
 
 }

@@ -8,8 +8,17 @@ public class Joker extends Carta {
 
     private boolean enColor;
 
-    public Joker(boolean bolean1) {
-        // Constructor a resolver...
+    public Joker(boolean enColor) {
+        this.enColor = enColor;
     }
+
+    @Override
+    public String toString() {
+        return "Joker " + (enColor ? "con" : "sin") + " color";
+    }
+
+    
+    
+    
 
 }

@@ -7,7 +7,8 @@ package resueltos.guia3.ej03;
 public class Principal {
 
     public static void main(String[] args) {
-        // Método a resolver...
+        Mazo m = new Mazo();        
+        m.mostrar();
     }
 
 }

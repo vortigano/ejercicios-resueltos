@@ -8,8 +8,16 @@ public class CartaConNumero extends CartaConPalo {
 
     private int numero;
 
-    public CartaConNumero(int int1, TipoDePalo tipodepalo2) {
-        // Constructor a resolver...
+    public CartaConNumero(int numero, TipoDePalo palo) {
+        super(palo);
+        this.numero = numero;
     }
+
+    @Override
+    public String toString() {
+        return numero + " de " + getPalo();
+    }
+
+    
 
 }

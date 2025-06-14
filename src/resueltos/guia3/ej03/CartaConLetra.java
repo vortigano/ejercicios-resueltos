@@ -8,8 +8,14 @@ public class CartaConLetra extends CartaConPalo {
 
     private char letra;
 
-    public CartaConLetra(char char1, TipoDePalo tipodepalo2) {
-        // Constructor a resolver...
+    public CartaConLetra(char letra, TipoDePalo palo) {
+        super(palo);
+        this.letra = letra;
+    } 
+    
+    @Override
+    public String toString() {
+        return letra + " de " + getPalo();
     }
 
 }

@@ -10,6 +10,7 @@ public enum TipoDePalo {
     TREBOL(TipoDeColor.NEGRO),
     PICA(TipoDeColor.NEGRO),
     DIAMANTE(TipoDeColor.ROJO);
+    
     private TipoDeColor color;
 
     private TipoDePalo(TipoDeColor tipodecolor1) {

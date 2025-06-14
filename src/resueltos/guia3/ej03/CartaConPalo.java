@@ -8,4 +8,11 @@ public abstract class CartaConPalo extends Carta {
 
     private TipoDePalo palo;
 
+    public CartaConPalo(TipoDePalo palo) {
+        this.palo = palo;
+    }
+
+    public TipoDePalo getPalo() {
+        return palo;
+    }    
 }

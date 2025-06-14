@@ -18,9 +18,9 @@ public abstract class Carta {
 
     public void mostrar() {
         if (deFrente) {
-            // mostrar su contenido
+            System.out.println(toString());
         } else {
-            // mostrar "**********"
+            System.out.println("**********");
         }
     }
 
