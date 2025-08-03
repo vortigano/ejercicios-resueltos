@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>14</zoom_level><element><id>UMLClass</id><coordinates><x>308</x><y>0</y><w>266</w><h>98</h></coordinates><panel_attributes>UTNFight
+-
+-
++ batallar(String, String): void
++ batallarTodos(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>294</x><y>210</y><w>308</w><h>112</h></coordinates><panel_attributes>Jugador
+--
+- id: String
+--
++ getResumenDePartidas(): Resumen</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>406</x><y>84</y><w>126</w><h>154</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- jugadores</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>308</x><y>434</y><w>238</w><h>140</h></coordinates><panel_attributes>Personaje
+--
+- nombre: String
+- vida: double
+-
+/+ atacar(): void/
++ defender(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>644</y><w>238</w><h>98</h></coordinates><panel_attributes>Guerrero
+--
+- fuerza: double
+-
++ atacar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>476</x><y>644</y><w>238</w><h>112</h></coordinates><panel_attributes>Arquero
+--
+- cantFlechas: double
+- potenciaArco: double
+--
++ atacar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>462</x><y>560</y><w>168</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;60</additional_attributes></element><element><id>Relation</id><coordinates><x>224</x><y>560</y><w>168</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>406</x><y>308</y><w>154</w><h>154</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- personajeFav</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>868</x><y>350</y><w>238</w><h>84</h></coordinates><panel_attributes>Partida
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>280</y><w>308</w><h>154</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- partidasJugadas</panel_attributes><additional_attributes>200;80;70;80;70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>224</y><w>462</w><h>154</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- contricante</panel_attributes><additional_attributes>10;20;310;20;310;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>896</x><y>574</y><w>196</w><h>112</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+ResultadoDeBatalla
+--
++ VICTORIA
++ DERROTA</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>980</x><y>420</y><w>126</w><h>182</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- resultado</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>28</x><y>224</y><w>182</w><h>84</h></coordinates><panel_attributes>Resumen
+--
+- cantVictorias: int
+- cantDerrotas: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>196</x><y>254</y><w>126</w><h>42</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;70;10</additional_attributes></element></diagram>

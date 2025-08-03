@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.1"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>183</x><y>351</y><w>247</w><h>130</h></coordinates><panel_attributes>Paquete
+--
+- peso: double
+- volumenCm3: double
+--
++ Paquete(double, double)
++ getPeso(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>92</x><y>195</y><w>286</w><h>130</h></coordinates><panel_attributes>Empresa
+--
+--
++ agregarDron(Dron): void
++ elegirDron(double, Paquete): Dron
++ elegirDron(double, double): Dron
++ apagarDrones(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>612</x><y>182</y><w>312</w><h>221</h></coordinates><panel_attributes>/Dron/
+--
+- id: String
+- bateriaActual: double
+- consumoPorMinuto: double
+- consumoPorKm: double
+- encendido: boolean
+--
++ Dron(String, double, double, double)
+/+ aceptaMision(): boolean/
++ encender(): void
++ apagar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>365</x><y>221</y><w>273</w><h>65</h></coordinates><panel_attributes>lt=&lt;-
+- drones
+m1=0..n</panel_attributes><additional_attributes>190;20;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>118</x><y>312</y><w>91</w><h>143</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;90;10;90;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>508</x><y>442</y><w>312</w><h>143</h></coordinates><panel_attributes>DronRepartidor
+--
+- capMaxKg: double
+--
++ aceptaMision(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>651</x><y>390</y><w>143</w><h>78</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>313</x><y>468</y><w>390</w><h>208</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- paquete</panel_attributes><additional_attributes>10;10;10;140;280;140;280;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>924</x><y>442</y><w>312</w><h>143</h></coordinates><panel_attributes>DronFilmador
+--
+
+--
++ aceptaMision(): boolean
++ apagar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>976</x><y>221</y><w>221</w><h>104</h></coordinates><panel_attributes>Camara
+--
+- consXMinutoGrab: double
+--
++ encender(): void
++ apagar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1067</x><y>312</y><w>104</w><h>156</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- camara</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>859</x><y>390</y><w>130</w><h>78</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>976</x><y>26</y><w>221</w><h>104</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Encendible/
+--
+/+ encender(): void/
+/+ apagar(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>755</x><y>65</y><w>247</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>170;10;10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>1067</x><y>117</y><w>39</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element></diagram>
